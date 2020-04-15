@@ -6,19 +6,19 @@
 #### Usearch is * insert description of usearch *
 - insert parameter options etc.
 ## **SignalP**
-#### SignalP is a Signal Peptide Prediction Tool
+#### SignalP is a Signal Peptide Prediction Tool which identifies signal peptides from protein fasta files
 
 * Version: 5.0 
-* Download tool from: 
+* Download tool from: [https://services.healthtech.dtu.dk/service.php?SignalP-5.0]
 * The path to the directory of where the executable script of the tool should be provided if the tool is not your path.
 * output path should be provided 
 * output is produced in gff3 format
 
 ## **TMHMM**
-#### TMHMM is a Transmembrane Prediction Tool
+#### TMHMM is a Transmembrane Prediction Tool which identifies transmembrane proteins from protein fasta files
 
 * Version: 2.0
-* Download tool from: 
+* Download tool from: [https://services.healthtech.dtu.dk/service.php?TMHMM-2.0]
 * The path to the directory of where the executable script of the tool should be provided if the tool is not your path.
 * output path should be provided 
 * output is produced in gff3 format
