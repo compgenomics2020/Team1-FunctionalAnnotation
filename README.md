@@ -42,7 +42,19 @@
 
 ## Usage
 
-./functional_annotation.py /home/projects/group-a/functional_annotation/clustering-tools/usearch11.0.667_i86linux32 -f /home/projects/group-a/functional_annotation/script_test -o scripty -e /home/projects/group-a/functional_annotation/homology-tools/eggnog/eggnog-mapper/emapper.py -p /home/projects/group-a/functional_annotation/ab-initio_tools/signalp-5.0b/bin/ -t /home/projects/group-a/functional_annotation/ab-initio_tools/tmhmm-2.0c/bin/ -s /home/projects/group-a/functional_annotation/homology-tools/interproscan/interproscan-5.41-78.0/interproscan.sh -d /home/projects/group-a/functional_annotation/homology-tools/deeparg/deeparg-ss/deepARG.py
+* -i : specify clustering identity; default = 0.7
+* -f : path to protein sequences directory
+* -p : used to specify if the sequences are protein sequences or not
+* -u : Usearch tool path
+* -o : Output file path
+* -s : Interproscan absolute path
+* -d : DeepARG absolute path
+* -e : EggNOG absolute path
+* -p : SignalP Directory Path
+* -t : TMHMM Directory Path
+* -r : PilerCR Output Path (Must end in "/")
+
+Execution: 
 
 ## Requirements 
 <specific requirements for the tools/dependencies>
