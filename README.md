@@ -6,11 +6,23 @@
 #### Usearch is * insert description of usearch *
 - insert parameter options etc.
 ## **SignalP**
-#### SignalP is * insert description of usearch *
-- insert parameter options etc.
+#### SignalP is a Signal Peptide Prediction Tool
+
+* Version: 5.0 
+* Download tool from: 
+* The path to the directory of where the executable script of the tool should be provided if the tool is not your path.
+* output path should be provided 
+* output is produced in gff3 format
+
 ## **TMHMM**
-#### TMHMM is * insert description of usearch *
-- insert parameter options etc.
+#### TMHMM is a Transmembrane Prediction Tool
+
+* Version: 2.0
+* Download tool from: 
+* The path to the directory of where the executable script of the tool should be provided if the tool is not your path.
+* output path should be provided 
+* output is produced in gff3 format
+
 ## **PilerCR**
 #### PilerCR is an *ab-initio* based tool which scans the assembled genome (not the genes) for CRISPR repeats.
 - -in inputFile
@@ -27,6 +39,19 @@
 ## **EggNOG**
 #### EggNOG is * insert description of usearch *
 - insert parameter options etc.
+
+## Usage
+
+
+## Requirements 
+<specific requirements for the tools/dependencies>
+
 ## Citations
-1. Edgar, R.C. (2007) PILER-CR: fast and accurate identification of CRISPR repeats, BMC Bioinformatics, Jan 20;8:18.
-2. second citation here
+1. USearch citation
+2. Armenteros, J. J. A., Tsirigos, K. D., Sønderby, C. K., Petersen, T. N., Winther, O., Brunak, S., ... & Nielsen, H. (2019). SignalP 5.0 improves signal peptide predictions using deep neural networks. Nature biotechnology, 37(4), 420-423.
+3.Krogh, A., Larsson, B., Von Heijne, G., & Sonnhammer, E. L. (2001). Predicting transmembrane protein topology with a hidden Markov model: application to complete genomes. Journal of molecular biology, 305(3), 567-580.
+4. Edgar, R.C. (2007) PILER-CR: fast and accurate identification of CRISPR repeats, BMC Bioinformatics, Jan 20;8:18.
+5. InterProScan citation
+6. DeepARG citation
+7. EggNOG citation
+
