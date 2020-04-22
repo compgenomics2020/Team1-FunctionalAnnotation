@@ -53,7 +53,7 @@
 #### EggNOG-mapper is a fast functional annotation tool for genes and proteins. It uses precomputed orthologous groups and phylogenies from the eggNOG database which consists of Orthologous Groups( OGs) of proteins at taxonomic levels.
 * Version: 2.0
 * input: FASTA file
-* -d database(eukaryotic: euk/ bacterial: euk/ archeal: arch)
+* -d database(bacterial: bact/ eukaryotic: euk/ archeal: arch)
 * -m mode(HMMER/Diamond)
 * -i inputFile
 * --output outputFile
