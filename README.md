@@ -4,9 +4,8 @@
 #### This pipeline clusters the genes, then performs both *ab-initio* and homology-based functional annotation on the genes.
 
 ## **Usearch**
-#### Usearch is sequence analysis tool offering clustering algorithms for the gene sequences. It can cluster genes together reducing computational time in homology-based functional annotation tools. *
-- It takes in the path for the output, whether you want to cluster by protein sequences or nucleotide sequences, and the name of the output. 
-- It returns a file with the centroid genes, and another file linking the centroid genes to the other genes in the centroid.
+#### Usearch is * insert description of usearch *
+- insert parameter options etc.
 
 ## **SignalP**
 #### SignalP is a Signal Peptide Prediction Tool which identifies signal peptides from protein fasta files
@@ -31,12 +30,24 @@
 #### The output files are in GFF format. 
 
 ## **InterProScan**
-#### InterProScan is * insert description of usearch *
-- insert parameter options etc.
+#### InterProScan is a function annotation tool that scans sequences against InterPro protein signature databases. It classifies proteins into families and predict domains and important sites. Signatures are predictive models constructed from multiple sequence alignments that can be used to classify proteins. Using protein signatures is often a more sensitive way of identifying protein function than pairwise sequence similarity searches, such as BLAST. InterPro combines four types of protein signatures (patterns, profiles, fingerprints and HMMs) from multiple databases.
+* Version: 5.42
+* Requirement: 
+  - Perl 5.22
+  - Python 3
+  - Java 11
+* input: centroid.fa (protein sequence)
+* output: *.gff3 *.tsv *.xml
 
 ## **DeepARG**
-#### DeepARG is * insert description of usearch *
-- insert parameter options etc.
+#### DeepARG is a deep learning tool that annotate antibiotic resistance genes in metagenomes. It is composed of two models for two types of input: DeepARG-SS for short sequence reads from Next Generation Sequencing (NGS) technologies such as Ilummina and DeepARG-LS for long gene-like sequences from assembled samples.
+* Requirement: Python 2.7
+* input:
+* output:
+  - output_file_name.align.daa, DIAMOND alignment archive
+  - output_file_name.align.daa.tsv, tabular format. Default: qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore
+  - output_file_name.mapping.ARG, contains the sequences with a probability >= --prob (0.8 default)
+  - output_file_name.mapping.potential.ARG, contains the sequences with a probability < --prob (0.8 default)
 
 ## **EggNOG**
 #### EggNOG is * insert description of usearch *
@@ -55,7 +66,7 @@
 * -t : TMHMM Directory Path
 * -r : PilerCR Output Path (Must end in "/")
 
-Execution: ./functional_annotation.py /home/projects/group-a/functional_annotation/clustering-tools/usearch11.0.667_i86linux32 -f /home/projects/group-a/functional_annotation/script_test -o scripty -e /home/projects/group-a/functional_annotation/homology-tools/eggnog/eggnog-mapper/emapper.py -p /home/projects/group-a/functional_annotation/ab-initio_tools/signalp-5.0b/bin/ -t /home/projects/group-a/functional_annotation/ab-initio_tools/tmhmm-2.0c/bin/ -s /home/projects/group-a/functional_annotation/homology-tools/interproscan/interproscan-5.41-78.0/interproscan.sh -d /home/projects/group-a/functional_annotation/homology-tools/deeparg/deeparg-ss/deepARG.py
+Execution: 
 
 ## Requirements 
 This pipeline assumes all tools listed below and their dependencies have already been installed.
@@ -73,7 +84,7 @@ This pipeline assumes all tools listed below and their dependencies have already
 2. Armenteros, J. J. A., Tsirigos, K. D., Sønderby, C. K., Petersen, T. N., Winther, O., Brunak, S., ... & Nielsen, H. (2019). SignalP 5.0 improves signal peptide predictions using deep neural networks. Nature biotechnology, 37(4), 420-423.
 3. Krogh, A., Larsson, B., Von Heijne, G., & Sonnhammer, E. L. (2001). Predicting transmembrane protein topology with a hidden Markov model: application to complete genomes. Journal of molecular biology, 305(3), 567-580.
 4. Edgar, R.C. (2007) PILER-CR: fast and accurate identification of CRISPR repeats, BMC Bioinformatics, Jan 20;8:18.
-5. InterProScan citation
-6. DeepARG citation
+5. Jones, Philip, et al. "InterProScan 5: genome-scale protein function classification." Bioinformatics 30.9 (2014): 1236-1240.
+6. Arango-Argoty, Gustavo, et al. "DeepARG: a deep learning approach for predicting antibiotic resistance genes from metagenomic data." Microbiome 6.1 (2018): 1-15.
 7.  Fast genome-wide functional annotation through orthology assignment by eggNOG-mapper. Jaime Huerta-Cepas, Kristoffer Forslund, Luis Pedro Coelho, Damian Szklarczyk, Lars Juhl Jensen, Christian von Mering and Peer Bork.Mol Biol Evol (2017). [doi: 10.1093/molbev/msx148](https://doi.org/10.1093/molbev/msx148)
 
