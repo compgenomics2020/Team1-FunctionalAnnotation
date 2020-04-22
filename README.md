@@ -4,8 +4,9 @@
 #### This pipeline clusters the genes, then performs both *ab-initio* and homology-based functional annotation on the genes.
 
 ## **Usearch**
-#### Usearch is * insert description of usearch *
-- insert parameter options etc.
+#### Usearch is sequence analysis tool offering clustering algorithms for the gene sequences. It can cluster genes together reducing computational time in homology-based functional annotation tools. *
+- It takes in the path for the output, whether you want to cluster by protein sequences or nucleotide sequences, and the name of the output. 
+- It returns a file with the centroid genes, and another file linking the centroid genes to the other genes in the centroid.
 
 ## **SignalP**
 #### SignalP is a Signal Peptide Prediction Tool which identifies signal peptides from protein fasta files
