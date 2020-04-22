@@ -55,7 +55,7 @@
 * -t : TMHMM Directory Path
 * -r : PilerCR Output Path (Must end in "/")
 
-Execution: 
+Execution: ./functional_annotation.py /home/projects/group-a/functional_annotation/clustering-tools/usearch11.0.667_i86linux32 -f /home/projects/group-a/functional_annotation/script_test -o scripty -e /home/projects/group-a/functional_annotation/homology-tools/eggnog/eggnog-mapper/emapper.py -p /home/projects/group-a/functional_annotation/ab-initio_tools/signalp-5.0b/bin/ -t /home/projects/group-a/functional_annotation/ab-initio_tools/tmhmm-2.0c/bin/ -s /home/projects/group-a/functional_annotation/homology-tools/interproscan/interproscan-5.41-78.0/interproscan.sh -d /home/projects/group-a/functional_annotation/homology-tools/deeparg/deeparg-ss/deepARG.py
 
 ## Requirements 
 This pipeline assumes all tools listed below and their dependencies have already been installed.
