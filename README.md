@@ -4,8 +4,9 @@
 #### This pipeline clusters the genes, then performs both *ab-initio* and homology-based functional annotation on the genes.
 
 ## **Usearch**
-#### Usearch is * insert description of usearch *
-- insert parameter options etc.
+#### USearch performs sequence clustering using a greedy agglomerative algorithm, meaning it creates clusters and assigns cluster identity in the order of input sequences. Identity is calculated through the use of kmers in a heuristic manner.*
+* Input: Identified Gene sequences in FASTA format
+* Output: FASTA format file with representative sequences of each indentified cluster. 
 
 ## **SignalP**
 #### SignalP is a Signal Peptide Prediction Tool which identifies signal peptides from protein fasta files
@@ -86,7 +87,8 @@ This pipeline assumes all tools listed below and their dependencies have already
 * [EggNOG-Mapper](https://github.com/eggnogdb/eggnog-mapper)
 
 ## Citations
-1. USearch citation
+1. Edgar,RC (2010) Search and clustering orders of magnitude faster than BLAST, Bioinformatics 26(19), 2460-2461.
+doi: 10.1093/bioinformatics/btq461
 2. Armenteros, J. J. A., Tsirigos, K. D., Sønderby, C. K., Petersen, T. N., Winther, O., Brunak, S., ... & Nielsen, H. (2019). SignalP 5.0 improves signal peptide predictions using deep neural networks. Nature biotechnology, 37(4), 420-423.
 3. Krogh, A., Larsson, B., Von Heijne, G., & Sonnhammer, E. L. (2001). Predicting transmembrane protein topology with a hidden Markov model: application to complete genomes. Journal of molecular biology, 305(3), 567-580.
 4. Edgar, R.C. (2007) PILER-CR: fast and accurate identification of CRISPR repeats, BMC Bioinformatics, Jan 20;8:18.
