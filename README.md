@@ -50,8 +50,12 @@
   - output_file_name.mapping.potential.ARG, contains the sequences with a probability < --prob (0.8 default)
 
 ## **EggNOG**
-#### EggNOG is * insert description of usearch *
-- insert parameter options etc.
+#### EggNOG-mapper is a fast functional annotation tool for genes and proteins
+- Version: 2.0
+- -i inputFile
+- --output outputFile
+- -d database
+- -m mode(HMMER/Diamond)
 
 ## Usage
 * -i : specify clustering identity; default = 0.7
@@ -87,4 +91,5 @@ This pipeline assumes all tools listed below and their dependencies have already
 5. Jones, Philip, et al. "InterProScan 5: genome-scale protein function classification." Bioinformatics 30.9 (2014): 1236-1240.
 6. Arango-Argoty, Gustavo, et al. "DeepARG: a deep learning approach for predicting antibiotic resistance genes from metagenomic data." Microbiome 6.1 (2018): 1-15.
 7.  Fast genome-wide functional annotation through orthology assignment by eggNOG-mapper. Jaime Huerta-Cepas, Kristoffer Forslund, Luis Pedro Coelho, Damian Szklarczyk, Lars Juhl Jensen, Christian von Mering and Peer Bork.Mol Biol Evol (2017). [doi: 10.1093/molbev/msx148](https://doi.org/10.1093/molbev/msx148)
+8. Fast genome-wide functional annotation through orthology assignment by eggNOG-mapper. Jaime Huerta-Cepas, Damian Szklarczyk, Lars Juhl Jensen, Christian von Mering and Peer Bork. Submitted (2016).
 
