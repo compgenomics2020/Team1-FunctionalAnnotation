@@ -4,7 +4,7 @@
 #### This pipeline clusters the genes, then performs both *ab-initio* and homology-based functional annotation on the genes.
 
 ## **Usearch**
-#### USearch performs sequence clustering using a greedy agglomerative algorithm, meaning it creates clusters and assigns cluster identity in the order of input sequences. Identity is calculated through the use of kmers in a heuristic manner.*
+#### USearch performs sequence clustering using a greedy agglomerative algorithm, meaning it creates clusters and assigns cluster identity in the order of input sequences. Identity is calculated through the use of kmers in a heuristic manner.
 * Input: Identified Gene sequences in FASTA format
 * Output: FASTA format file with representative sequences of each indentified cluster. 
 
