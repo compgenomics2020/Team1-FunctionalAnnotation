@@ -50,12 +50,14 @@
   - output_file_name.mapping.potential.ARG, contains the sequences with a probability < --prob (0.8 default)
 
 ## **EggNOG**
-#### EggNOG-mapper is a fast functional annotation tool for genes and proteins
-- Version: 2.0
-- -i inputFile
-- --output outputFile
-- -d database
-- -m mode(HMMER/Diamond)
+#### EggNOG-mapper is a fast functional annotation tool for genes and proteins. It uses precomputed orthologous groups and phylogenies from the eggNOG database which consists of Orthologous Groups( OGs) of proteins at taxonomic levels.
+* Version: 2.0
+* input: FASTA file
+* -i inputFile
+* --output outputFile
+* -o ouptutDirectory
+* -d database(eukaryotic: euk/ bacterial: euk/ archeal: arch)
+* -m mode(HMMER/Diamond)
 
 ## Usage
 * -i : specify clustering identity; default = 0.7
